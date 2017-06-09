@@ -1,0 +1,36 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "Demo API created by Natalie B",
+    "version" : "1.0.1",
+    "title" : "Demo API Lambda"
+  },
+  "host" : "httpbin.org",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/ip" : {
+      "get" : {
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "search results matching criteria",
+            "examples" : {
+              "application/json" : {
+                "origin" : "127.0.0.1"
+              }
+            }
+          },
+          "400" : {
+            "description" : "bad input parameter"
+          },
+          "default" : {
+            "description" : "default response"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : { },
+  "x-aws-api-id" : "iv8xvcejp1"
+}
