@@ -1,7 +1,7 @@
 {
   "swagger" : "2.0",
   "info" : {
-    "description" : "This is a sample server Petstore server.  You can find \nout more about Swagger at \n[http://swagger.io](http://swagger.io) or on \n[irc.freenode.net, #swagger](http://swagger.io/irc/).\n",
+    "description" : "MODIFIED",
     "version" : "1.0.0",
     "title" : "Swagger Petstore",
     "termsOfService" : "http://swagger.io/terms/",
@@ -36,30 +36,6 @@
   "schemes" : [ "https", "http" ],
   "paths" : {
     "/pet" : {
-      "post" : {
-        "tags" : [ "pet" ],
-        "summary" : "Add a new pet to the store",
-        "operationId" : "addPet",
-        "consumes" : [ "application/json", "application/xml" ],
-        "produces" : [ "application/json", "application/xml" ],
-        "parameters" : [ {
-          "in" : "body",
-          "name" : "body",
-          "description" : "Pet object that needs to be added to the store",
-          "required" : true,
-          "schema" : {
-            "$ref" : "#/definitions/Pet"
-          }
-        } ],
-        "responses" : {
-          "405" : {
-            "description" : "Invalid input"
-          }
-        },
-        "security" : [ {
-          "petstore_auth" : [ "write:pets", "read:pets" ]
-        } ]
-      },
       "put" : {
         "tags" : [ "pet" ],
         "summary" : "Update an existing pet",
